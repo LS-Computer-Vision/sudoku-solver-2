@@ -29,7 +29,11 @@ The class ```Detector``` contains the functions needed to carry out the processi
 
 All you need to do is add methods corresponding to stages. The methods will be executed automatically during processing.
 
-To add a stage to the processing, just add a member function (taking no parameters) whose name is of the format ```stage_[idx]_[name]```. The stages are executed in the order of increasing ```idx```. Each stage should take no parameters (except ```self```) and return a numpy image for debugging purposes (it can be any data you want which will help you visualize the stage). The numpy image is displayed to the screen for debugging.
+To add a stage to the processing, just add a member function (taking no parameters) whose name is of the format ```stage_[idx]_[name]```. The stages are executed in the order of increasing ```idx```.
+
+Each stage should take **no parameters** (except ```self```) and **return a numpy image** for debugging purposes (it can be any data you want which will help you visualize the stage). The numpy image is displayed to the screen for debugging.
+
+If you want to share data between stages (or pass data from one stage to another) use class member variables (eg you might store the output of one stage into ```self.image``` and access it in the next stage using ```self.image```)
 
 One example might be, we have the methods ```stage_1_preprocess(self)``` and ```stage_2_transform(self)```. Then the preprocess stage is carried out first followed by transform stage.
 
