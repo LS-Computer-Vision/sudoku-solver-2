@@ -42,12 +42,16 @@ For some stages, you might want have 81 different images corresponding to the 81
 A typical stage might go like this:
 
 * Preprocess the image
+
 	![Imgur](https://imgur.com/WH62exT.png)
 * Detect largest rectangle and apply perspective transform
+
 	![Imgur](https://imgur.com/zMiX2Vl.png)
 * Extract all cells
+
 	![Imgur](https://imgur.com/FwNW7oM.png)
 * Remove cell borders
+
 	![Imgur](https://imgur.com/UoOyJVz.png)
 
 Now, there are several different ways to do all of this stuff, and you may want to explore some of this on your own. You may even design an ML based pipeline to extract the grid if you want. Some alternative ideas you can explore
