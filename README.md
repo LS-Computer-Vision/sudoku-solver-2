@@ -39,7 +39,7 @@ One example might be, we have the methods ```stage_1_preprocess(self)``` and ```
 
 For some stages, you might want have 81 different images corresponding to the 81 cells you extracted from the sudoku grid. To display them, use the ```Detector.makePreview()``` method. This takes as input a 9x9 array of similar sized images, and returns a single combined image which you can return from your stage to be displayed
 
-A typical stage might go like this:
+A typical pipeline (set of stages) might go like this:
 
 * Preprocess the image
 
