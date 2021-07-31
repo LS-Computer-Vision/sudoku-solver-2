@@ -1,4 +1,4 @@
-The updated problem statement for this assignment can be found at https://github.com/LS-Computer-Vision/opencv-basics
+The updated problem statement for this assignment can be found at https://github.com/LS-Computer-Vision/sudoku-solver-2
 
 # Sudoku Solver 2
 
